@@ -16,6 +16,7 @@
 			<section class="header-image"></section>
 				<nav class="navigation">
 					<div class="navigation-container">
+						<!-- тут лучше вынести знак / за пределы ссылок -->
 						<a href="#subtitleOne">Rocking out /</a>
 						<a href="#subtitleTwo">Getting in the zone /</a>
 						<a href="#subtitleThree">Refactoring your systems</a>
@@ -25,12 +26,15 @@
 		<main class="content">
 			<section class="content-container-one">
 				<div class="subtitle-container-one">
+					<!--рекомендуется использовать h1 один раз на странице -->
 					<h1 id="subtitleOne">Rocking Out in the Excitement Phase</h1>
 				</div>
 				<section class="text-container-one">
 					<div id="imageOne">
+						<!-- лучше не плющить картинки атрибутами, а задавать например только ширину или только высоту, кроме того, лучше все стили держать в css -->
 						<img src="img/01comic.png" alt="coder" width="400" height="200">
 					</div>
+					<!-- зачем нужны отдельные id под каждый блок, если они все одинаковые и могут быть описаны классом? -->
 					<div id="textOne">
 						<p>Just like a cowboy in a western, your “trigger” fingers start itching. You get a healthy buzz from the endless possibilities that await you – you’re inspired by that one amazing idea. <br>
 						Let’s face it – you know you’re going to drop any and all plans and dive into this project with every drop of energy at your disposal. You’re going to be up all day and all night. <br>
@@ -72,6 +76,7 @@
 						You discover a new technology or a better way of doing something. You feel eager and excited. You know this is exactly what you need to make your code faster, cleaner, and more optimized. You feel pumped up and dig in hard. <br>
 						However, this phase often doesn’t end well. <br>
 						Your great idea wasn’t necessarily a bad one. But, the thought that this was just a minor adjustment goes out of the window. After a week of refactoring, you realize one of two things: 
+						<!-- обычно сначала заканчивают параграф, потом начинают список -->
 						<ol class="links">
 							<li>This is too big of a piece of cake to eat all in one go. OR</li>
 							<li>This idea just isn’t working out with the current codebase.</li>
