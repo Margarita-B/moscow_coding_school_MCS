@@ -16,8 +16,9 @@
 			<section class="header-image"></section>
 				<nav class="navigation">
 					<div class="navigation-container">
-						<a href="#subtitleOne">Rocking out /</a>
-						<a href="#subtitleTwo">Getting in the zone /</a>
+						<!-- тут лучше вынести знак / за пределы ссылок -->
+						<a href="#subtitleOne">Rocking out</a> /
+						<a href="#subtitleTwo">Getting in the zone</a> /
 						<a href="#subtitleThree">Refactoring your systems</a>
 					</div>
 				</nav>
@@ -25,13 +26,16 @@
 		<main class="content">
 			<section class="content-container-one">
 				<div class="subtitle-container-one">
-					<h1 id="subtitleOne">Rocking Out in the Excitement Phase</h1>
+					<!--рекомендуется использовать h1 один раз на странице -->
+					<h2 id="subtitleOne">Rocking Out in the Excitement Phase</h2>
 				</div>
 				<section class="text-container-one">
-					<div id="imageOne">
+					<div class="image">
+						<!-- лучше не плющить картинки атрибутами, а задавать например только ширину или только высоту, кроме того, лучше все стили держать в css -->
 						<img src="img/01comic.png" alt="coder" width="400" height="200">
 					</div>
-					<div id="textOne">
+					<!-- зачем нужны отдельные id под каждый блок, если они все одинаковые и могут быть описаны классом? -->
+					<div class="text">
 						<p>Just like a cowboy in a western, your “trigger” fingers start itching. You get a healthy buzz from the endless possibilities that await you – you’re inspired by that one amazing idea. <br>
 						Let’s face it – you know you’re going to drop any and all plans and dive into this project with every drop of energy at your disposal. You’re going to be up all day and all night. <br>
 						Sooner or later, you snap, drop everything, and start coding this exciting new idea into reality – one line at a time. <br>
@@ -43,13 +47,13 @@
 			</section>
 			<section class="content-container-two">
 				<div class="subtitle-container-two">
-					<h1 id="subtitleTwo">Getting in the Zone – And Loving It!</h1>
+					<h2 id="subtitleTwo">Getting in the Zone – And Loving It!</h2>
 				</div>
 				<section class="text-container-two">
-					<div id="imageTwo">
+					<div class="image">
 						<img src="img/02comic.png" alt="coder" width="400" height="200">
 					</div>
-					<div id="textTwo">
+					<div class="text">
 						<p>In The Social Network, Justin Timberlake’s character tries to greet a group of hackers. The Zuckerberg character says, “Don’t bother greeting, they are in the zone.” <br>
 						Sometimes, you get the ball rolling so fast that everything else becomes a blip on the horizon. You put off your lunch break for hours. Your eyeballs start to turn yellow because you can’t stop—not even for a minute—to visit the restroom. <br>
 						You code and code and code. With every code execution and every error, you feel the solution waiting for you – right around the corner. <br>
@@ -61,22 +65,23 @@
 			</section>
 			<section class="content-container-three">
 				<div class="subtitle-container-three">
-					<h1 id="subtitleThree">Refactoring Your Systems and Putting It All on Red</h1>
+					<h2 id="subtitleThree">Refactoring Your Systems and Putting It All on Red</h2>
 				</div>
 				<section class="text-container-three">
-					<div id="imageThree">
+					<div class="image">
 						<img src="img/03comic.png" alt="coder" width="400" height="200">
 					</div>
-					<div id="textThree">
+					<div class="text">
 						<p>From time to time, you have epiphanies. <br>
 						You discover a new technology or a better way of doing something. You feel eager and excited. You know this is exactly what you need to make your code faster, cleaner, and more optimized. You feel pumped up and dig in hard. <br>
 						However, this phase often doesn’t end well. <br>
-						Your great idea wasn’t necessarily a bad one. But, the thought that this was just a minor adjustment goes out of the window. After a week of refactoring, you realize one of two things: 
+						Your great idea wasn’t necessarily a bad one. But, the thought that this was just a minor adjustment goes out of the window. After a week of refactoring, you realize one of two things:</p>
+						<!-- обычно сначала заканчивают параграф, потом начинают список -->
 						<ol class="links">
 							<li>This is too big of a piece of cake to eat all in one go. OR</li>
 							<li>This idea just isn’t working out with the current codebase.</li>
 						</ol>
-						However, these solutions sometimes work out. Your miracle really does everything you imagined it would. It’s a gamble, but refactoring failures are totally worth the feeling you get when your dreams really do come true.</p>
+						<p>However, these solutions sometimes work out. Your miracle really does everything you imagined it would. It’s a gamble, but refactoring failures are totally worth the feeling you get when your dreams really do come true.</p>
 					</div>
 				</section>
 			</section>			

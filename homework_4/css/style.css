@@ -1,16 +1,15 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css?family=Alice');
+/* в этой ссылке уже импортировано 2 шрифта, зачем первый импорт? */
 @import url('https://fonts.googleapis.com/css?family=Alice|EB+Garamond');
 
 .header-container, .footer-container {
-	max-width: 100%;
 	height: 100px;
 	background-color: rgb(59,140,229);
 }
 
 .header-text, .footer-text {
-	line-height: 3.9;
-	margin-left: 5px;
+	line-height: 3.9; /* какой смысл применять эту величину, если можно прировлнять просто к 100px контейнера? */
+	margin-left: 5px; /* осознанно ли применен margin, а не padding например? я призываю не торопиться */
 	font-size: 25px;
 	font-family: 'Alice', serif;
 	color: rgb(255,255,255);
@@ -18,27 +17,35 @@
 }
 
 .header-image {
-	max-width: 100%;
 	height: 300px;
 	background-image: url(../img/coder_life.jpg);
+	background-size: cover;
+	/* неплохо было бы задать размер бэкграунду */
 	background-position: center; 
 }
 
 .navigation {
-	max-width: 100%;
 	height: 60px;
 	background-color: rgb(59,140,229);
 }
 
 .navigation-container a {
-	line-height: 2;
+	line-height: 2; /* какой смысл применять эту величину, если можно прировлнять просто к 60px контейнера? Ведь все равно неровно получилось*/
 	margin-left: 5px;
 	font-size: 25px;
+<<<<<<< HEAD
 	color: rgb(255,255,255);
 	text-transform: uppercase;
 	text-decoration: none;
+=======
+	font-family: 'Alice', serif;
+	text-decoration: none; /* первый раз ))) */
+	color: rgb(255,255,255);
+	text-transform: uppercase;
+
 }
 
+/* а можно было просто создать класс */
 #subtitleOne, #subtitleTwo, #subtitleThree {
 	line-height: 3.8;
 	margin-left: 5px;
@@ -47,13 +54,14 @@
 	color: rgb(0,0,0);
 	text-transform: uppercase;
 }
-
-#imageOne, #imageTwo, #imageThree {
-	float: left;
-	margin: 3px 0px 0px 46px;
+/* а можно было просто создать класс */
+.image {
+	float: left; /* это плохо, олдскульно и не до конца корректно, не стоило. Я расстроен. Можно просто дождаться этой темы и начать понимать, как работает сетка */
+	margin: 3px 0px 0px 46px; 
 }
 
-#textOne, #textTwo, #textThree {
+/* а можно было просто создать класс */
+.text {
 	margin-left: 500px;
 	margin-bottom: 50px;
 	letter-spacing: 3px;
@@ -63,7 +71,7 @@
 
 .links {
 	padding-left: 40px;
-	margin-top: 1em;
-	margin-bottom: 1em; 
-	list-style-type: lower-latin;
+	margin-top: 1em; /* разберемся позже, слишком вы торопитесь */
+	margin-bottom: 1em;
+	list-style-type: lower-latin; /* а вот за это респект */
 }
