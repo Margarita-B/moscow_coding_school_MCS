@@ -34,11 +34,9 @@
 	line-height: 2;
 	margin-left: 5px;
 	font-size: 25px;
-	font-family: 'Alice', serif;
-	text-decoration: none;
 	color: rgb(255,255,255);
 	text-transform: uppercase;
-	text-decoration: none !important;
+	text-decoration: none;
 }
 
 #subtitleOne, #subtitleTwo, #subtitleThree {
