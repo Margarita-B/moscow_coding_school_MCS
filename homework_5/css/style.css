@@ -33,7 +33,7 @@ p {
 	text-align: left;
 	font-family: 'Abel', sans-serif;
 	font-size: 20px;
-	padding-bottom: 10px; 
+	padding-bottom: 10px; /* я бы задавал контейнеру, храниящему p */
 	line-height: 30px;
 	margin-top: 10px;
 }
@@ -64,26 +64,26 @@ a {
 .NameandPhoto {position: relative;}
 
 .Name {
-	position: absolute;
+	position: absolute; /* зачем? того же эффекта можно добиться без позиционирования */
 	top: 470px;
 	left: 235px;	
 }
 
 .Photo {
-	position: absolute;
+	position: absolute; /* зачем? того же эффекта можно добиться без позиционирования, причем получилось бы более респонсив, картинка бы не налезала на блок слева при сжатии */
 	top: 250px;
 	right: 205px;
 }
 
 .ContentContainer {
-	display: inline-block;
+	display: inline-block; /* зачем? он же не должен быть колонками*/
 	vertical-align: top;
-	position: relative;
+	position: relative; 
 	margin-top: 50px;
 }
 
 .Text {
-	position: absolute;
+	position: absolute; /* зачем? вот пример, посмотри https://jsfiddle.net/pa7lux/uy0xk5ge/5/ */
 	width: 400px;
 	height: 750px;
 	border: 1px solid lightgrey;
