@@ -6,9 +6,14 @@
 	color: black;
 }
 
-section {
+.NameandPhotoContainer {
 	height: 750px;
 }
+
+.ContentContainer {
+	height: 800px;
+}
+
 
 h1{
 	text-transform: uppercase;
@@ -29,7 +34,7 @@ h3 {
 	font-family: 'Share Tech', sans-serif;
 }
 
-p {
+ul {
 	text-align: left;
 	font-family: 'Abel', sans-serif;
 	font-size: 20px;
@@ -61,48 +66,38 @@ a {
 	padding-left: 58px;
 }
 
-.NameandPhoto {position: relative;}
-
-.Name {
-	position: absolute; /* зачем? того же эффекта можно добиться без позиционирования */
-	top: 470px;
-	left: 235px;	
-}
+.Name {	
+  	display: inline-block;
+  	box-sizing: border-box;
+  	vertical-align: top;
+  	margin-top: 450px;
+  	margin-left: 280px;
+  	margin-right: 10px;
+ }
 
 .Photo {
-	position: absolute; /* зачем? того же эффекта можно добиться без позиционирования, причем получилось бы более респонсив, картинка бы не налезала на блок слева при сжатии */
-	top: 250px;
-	right: 205px;
-}
-
-.ContentContainer {
-	display: inline-block; /* зачем? он же не должен быть колонками*/
-	vertical-align: top;
-	position: relative; 
-	margin-top: 50px;
+	box-sizing: border-box;
+	margin-top: 250px;
+	margin-left: 180px; 
+	
 }
 
 .Text {
-	position: absolute; /* зачем? вот пример, посмотри https://jsfiddle.net/pa7lux/uy0xk5ge/5/ */
+	display: inline-block; 
+	vertical-align: top;
 	width: 400px;
 	height: 750px;
 	border: 1px solid lightgrey;
 	border-radius: 5px;
 	box-shadow: 0px 0px 5px grey;
 	box-sizing: border-box;
+	margin-top: 50px;
+	margin-left: 15px;
 	padding: 20px;
 }
 
 .Text.first {
 	margin-left: 95px;
-}
-
-.Text.second {
-	margin-left: 515px;
-}
-
-.Text.third {
-	margin-left: 935px;
 }
 
 .footerContainer {
