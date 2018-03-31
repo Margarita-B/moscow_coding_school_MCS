@@ -1,0 +1,116 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Abel|Share+Tech');
+
+.page {
+	background-color: #fafafa;
+	color: black;
+}
+
+section {
+	height: 750px;
+}
+
+h1{
+	text-transform: uppercase;
+	font-size: 36px;
+	font-family: 'Share Tech', sans-serif;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 54px;
+	font-family: 'Share Tech', sans-serif;
+}
+
+h3 {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-family: 'Share Tech', sans-serif;
+}
+
+p {
+	text-align: left;
+	font-family: 'Abel', sans-serif;
+	font-size: 20px;
+	padding-bottom: 10px; 
+	line-height: 30px;
+	margin-top: 10px;
+}
+
+a {
+	text-align: left;
+	font-family: 'Abel', sans-serif;
+	font-size: 20px;
+	color: black;
+}
+
+.HeaderContainer {
+	width: 100%;
+	height: 200px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid lightgrey;
+	background-image: url(../img/hands.jpg);
+	background-size: contain;
+	background-position: 60px 0px;
+	box-shadow: 0px 0px 5px grey;
+	z-index: 1;
+	padding-top: 67px;
+	padding-left: 58px;
+}
+
+.NameandPhoto {position: relative;}
+
+.Name {
+	position: absolute;
+	top: 470px;
+	left: 235px;	
+}
+
+.Photo {
+	position: absolute;
+	top: 250px;
+	right: 205px;
+}
+
+.ContentContainer {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin-top: 50px;
+}
+
+.Text {
+	position: absolute;
+	width: 400px;
+	height: 750px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px grey;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.Text.first {
+	margin-left: 95px;
+}
+
+.Text.second {
+	margin-left: 515px;
+}
+
+.Text.third {
+	margin-left: 935px;
+}
+
+.footerContainer {
+	height: 50px;
+	box-sizing: border-box;
+	border-bottom: 1px solid lightgrey;
+	box-shadow: 0px 0px 5px grey;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-left: 58px;
+}
