@@ -21,6 +21,7 @@ h2 {
 h3 {
 	font-size: 18px;
 	font-family: 'PT Sans', sans-serif;
+	
 }
 
 p {
@@ -81,10 +82,9 @@ p {
 	font-size: 40px;
 	font-family: 'PT Sans', sans-serif;
 	margin-top: 20px;
-	margin-left: 500px; /* почему не сработал более умный способ через, например, justify-content: flex-end; - мне пока не понятно*/
+	margin-left: 550px; /* почему не сработал более умный способ через, например, justify-content: flex-end; - мне пока не понятно*/
 	box-sizing: border-box;
 }
-
 
 .image {
 	display: flex;
@@ -110,9 +110,19 @@ p {
 	justify-content: space-around;
 }
 
+.starOne, .starTwo, .starThree, .starFour, .starFive, .starSix  {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .starOnePhoto, .starTwoPhoto, .starThreePhoto, .starFourPhoto, .starFivePhoto, .starSixPhoto {
 	width: 150px;
 	height: 150px;
+	
+	padding-bottom: 10px;
 }
 
 .TodayContainer{
