@@ -32,7 +32,7 @@ p {
 
 .imagesContainer {height: 1200px;}
 
-#historyContainer {height: 440px;}
+.historyContainer {height: 440px;}
 
 .history, .Today {
 	display: flex;
@@ -70,6 +70,10 @@ p {
 	padding-left: 50px;
 }
 
+.headerNavigation a{
+	text-decoration: none;
+}
+
 .links {
 	display: flex;
 	flex-wrap: wrap;
@@ -78,12 +82,9 @@ p {
 	font-family: 'PT Sans', sans-serif;
 	margin-top: 20px;
 	margin-left: 500px; /* почему не сработал более умный способ через, например, justify-content: flex-end; - мне пока не понятно*/
+	box-sizing: border-box;
 }
 
-.link1, .link2, .link3 {
-	box-sizing: border-box;
-	padding-left: 10px;
-}
 
 .image {
 	display: flex;
@@ -97,7 +98,7 @@ p {
 	padding-top: 20px;
 }
 
-#starsContainer {
+.starsContainer {
 	height: 300px;
 	box-sizing: border-box;
 	margin-bottom: 10px;
@@ -114,7 +115,7 @@ p {
 	height: 150px;
 }
 
-#TodayContainer{
+.TodayContainer{
 	height: 400px;
 	box-sizing: border-box;
 	margin-bottom: 10px;
