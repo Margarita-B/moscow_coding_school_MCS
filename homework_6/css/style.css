@@ -1,0 +1,134 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+.page {
+	background-color: #ffffff;
+	color: black;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+	font-size: 38px;
+	font-family: 'PT Sans', sans-serif;
+	padding-left: 20px;
+	padding-bottom: 40px;
+}
+
+h3 {
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+p {
+	font-size: 16px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.header{height: 80px;}
+
+.imagesContainer {height: 1200px;}
+
+#historyContainer {height: 440px;}
+
+.history, .Today {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.description {
+	width: 400px;
+	height: 310px;
+	box-sizing: border-box;
+	padding: 10px;
+	border-bottom: 1px solid lightgrey;
+	background-size: contain;
+	box-shadow: 0px 0px 5px grey;
+	margin: 10px;	 
+}
+
+.headerContainer {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	background-color: #ffffff;
+	border-bottom: 1px solid lightgrey;
+	box-shadow: 0px 0px 5px grey;
+	z-index: 1;	
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.headerTitle {
+	box-sizing: border-box;
+	padding-top: 20px;
+	padding-left: 50px;
+}
+
+.links {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	font-size: 40px;
+	font-family: 'PT Sans', sans-serif;
+	margin-top: 20px;
+	margin-left: 500px; /* почему не сработал более умный способ через, например, justify-content: flex-end; - мне пока не понятно*/
+}
+
+.link1, .link2, .link3 {
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+
+.image {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.image1, .image2, .image3, .image4 {
+	width: 700px;
+	height: 546px;
+	padding-top: 20px;
+}
+
+#starsContainer {
+	height: 300px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.stars {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.starOnePhoto, .starTwoPhoto, .starThreePhoto, .starFourPhoto, .starFivePhoto, .starSixPhoto {
+	width: 150px;
+	height: 150px;
+}
+
+#TodayContainer{
+	height: 400px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.footerContainer {
+	height: 50px;
+	box-sizing: border-box;
+	border-bottom: 1px solid lightgrey;
+	box-shadow: 0px 0px 5px grey;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+
+
