@@ -6,15 +6,6 @@
 	color: black;
 }
 
-.NameandPhotoContainer {
-	height: 750px;
-}
-
-.ContentContainer {
-	height: 800px;
-}
-
-
 h1{
 	text-transform: uppercase;
 	font-size: 36px;
@@ -38,7 +29,7 @@ ul {
 	text-align: left;
 	font-family: 'Abel', sans-serif;
 	font-size: 20px;
-	padding-bottom: 10px; /* я бы задавал контейнеру, храниящему p */
+	padding-bottom: 10px;  я бы задавал контейнеру, храниящему p 
 	line-height: 30px;
 	margin-top: 10px;
 }
@@ -52,7 +43,6 @@ a {
 
 .HeaderContainer {
 	width: 100%;
-	height: 200px;
 	box-sizing: border-box;
 	position: fixed;
 	top: 0;
@@ -62,50 +52,58 @@ a {
 	background-position: 60px 0px;
 	box-shadow: 0px 0px 5px grey;
 	z-index: 1;
-	padding-top: 67px;
+	padding-top: 40px;
 	padding-left: 58px;
+	padding-bottom: 40px;
+}
+
+.NameandPhoto {
+	box-sizing: border-box;
+	font-size: 0px;
+	padding-top: 190px; 
+	margin-left: 200px;
 }
 
 .Name {	
   	display: inline-block;
   	box-sizing: border-box;
   	vertical-align: top;
-  	margin-top: 450px;
-  	margin-left: 280px;
-  	margin-right: 10px;
+  	/*чувствую себя реальным лохом, но я не знаю как добиться нужного мне эффект*/
+  	width: 500px; 
+	height: 500px;
+	text-align: center;
+	padding-top: 200px;	
  }
 
 .Photo {
+	display: inline-block;
 	box-sizing: border-box;
-	margin-top: 250px;
-	margin-left: 180px; 
-	
+	width: 500px;
+	height: 500px;	
+}
+
+.ContentContainer {
+	margin: 80px 110px;
 }
 
 .Text {
 	display: inline-block; 
 	vertical-align: top;
 	width: 400px;
-	height: 750px;
+	height: 520px;
 	border: 1px solid lightgrey;
 	border-radius: 5px;
 	box-shadow: 0px 0px 5px grey;
 	box-sizing: border-box;
-	margin-top: 50px;
-	margin-left: 15px;
 	padding: 20px;
 }
 
-.Text.first {
-	margin-left: 95px;
-}
 
 .footerContainer {
-	height: 50px;
 	box-sizing: border-box;
 	border-bottom: 1px solid lightgrey;
 	box-shadow: 0px 0px 5px grey;
-	margin-top: 50px;
+	margin-top: 80px;
 	padding-top: 10px;
 	padding-left: 58px;
 }
