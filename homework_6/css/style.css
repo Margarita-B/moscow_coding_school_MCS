@@ -14,14 +14,13 @@ h1 {
 h2 {
 	font-size: 38px;
 	font-family: 'PT Sans', sans-serif;
-	padding-left: 20px;
-	padding-bottom: 40px;
 }
 
-h3 {
+h3 a{
 	font-size: 18px;
 	font-family: 'PT Sans', sans-serif;
-	
+	text-decoration: none;
+	color: black;
 }
 
 p {
@@ -29,32 +28,33 @@ p {
 	font-family: 'PT Sans', sans-serif;
 }
 
-.header{height: 80px;}
+.subtitle {
+	padding: 30px;
+}
 
-.imagesContainer {height: 1200px;}
+.imagesContainer, .historyContainer, .starsContainer, .todayContainer, .footerContainer {
+	box-sizing: border-box;
+	margin-top: 40px;
+}
 
-.historyContainer {height: 440px;}
 
-.history, .Today {
+.history, .today {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: center;	
 }
 
 .description {
 	width: 400px;
-	height: 310px;
 	box-sizing: border-box;
 	padding: 10px;
 	border-bottom: 1px solid lightgrey;
 	background-size: contain;
-	box-shadow: 0px 0px 5px grey;
-	margin: 10px;	 
+	box-shadow: 0px 0px 5px grey;	 
 }
 
 .headerContainer {
 	width: 100%;
-	height: 80px;
 	position: fixed;
 	top: 0;
 	background-color: #ffffff;
@@ -63,28 +63,19 @@ p {
 	z-index: 1;	
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.headerTitle {
+	justify-content: space-between;
+	align-items: center;
 	box-sizing: border-box;
-	padding-top: 20px;
-	padding-left: 50px;
+	padding: 20px;
 }
 
-.headerNavigation a{
+
+.links a{
 	text-decoration: none;
 	color: black;
-}
-
-.links {
-	display: flex;
-	flex-wrap: wrap;
 	box-sizing: border-box;
-	font-size: 40px;
+	font-size: 20px;
 	font-family: 'PT Sans', sans-serif;
-	margin-top: 20px;
-	margin-left: 550px; /* почему не сработал более умный способ через, например, justify-content: flex-end; - мне пока не понятно*/
-	box-sizing: border-box;
 }
 
 .image {
@@ -97,12 +88,6 @@ p {
 	width: 700px;
 	height: 546px;
 	padding-top: 20px;
-}
-
-.starsContainer {
-	height: 300px;
-	box-sizing: border-box;
-	margin-bottom: 10px;
 }
 
 .stars {
@@ -122,18 +107,10 @@ p {
 .starOnePhoto, .starTwoPhoto, .starThreePhoto, .starFourPhoto, .starFivePhoto, .starSixPhoto {
 	width: 150px;
 	height: 150px;
-	
 	padding-bottom: 10px;
 }
 
-.TodayContainer{
-	height: 400px;
-	box-sizing: border-box;
-	margin-bottom: 10px;
-}
-
 .footerContainer {
-	height: 50px;
 	box-sizing: border-box;
 	border-bottom: 1px solid lightgrey;
 	box-shadow: 0px 0px 5px grey;
@@ -141,6 +118,3 @@ p {
 	padding-top: 10px;
 	padding-left: 20px;
 }
-
-
-
