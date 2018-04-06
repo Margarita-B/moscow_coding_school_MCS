@@ -29,7 +29,7 @@ ul {
 	text-align: left;
 	font-family: 'Abel', sans-serif;
 	font-size: 20px;
-	padding-bottom: 10px;  я бы задавал контейнеру, храниящему p 
+	padding-bottom: 10px;
 	line-height: 30px;
 	margin-top: 10px;
 }
@@ -60,7 +60,8 @@ a {
 .NameandPhoto {
 	box-sizing: border-box;
 	font-size: 0px;
-	padding-top: 190px; 
+	/* попробуй убрать эти margin и padding. Вместо этого задай размер этому контейнеру как сумму размеров колонок и сделать margin: auto; потом попробуй сделать ширины в процентах */
+	padding-top: 190px; /* вместо padding margin-top: 190px; */
 	margin-left: 200px;
 }
 
@@ -68,7 +69,7 @@ a {
   	display: inline-block;
   	box-sizing: border-box;
   	vertical-align: top;
-  	/*чувствую себя реальным лохом, но я не знаю как добиться нужного мне эффект*/
+  	/*чувствую себя реальным лохом, но я не знаю как добиться нужного мне эффект - я думаю, я написал ответ*/
   	width: 500px; 
 	height: 500px;
 	text-align: center;
@@ -83,6 +84,7 @@ a {
 }
 
 .ContentContainer {
+	/* попробуй убрать эти margin и padding. Вместо этого задай размер этому контейнеру как сумму размеров колонок и сделать margin: auto; потом попробуй сделать ширины в процентах */
 	margin: 80px 110px;
 }
 
