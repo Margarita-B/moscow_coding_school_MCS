@@ -82,7 +82,7 @@ p {
 	width: 100%;
 	height: 100%;
 	background-color: #F5F5F5;
-	animation: first 1s ease-in-out 1 both;
+	animation: first 1s ease-in-out 1 forwards;
 	z-index: -2;
 }
 
@@ -91,7 +91,7 @@ p {
 	width: 33.5%;
 	height: 100%;
 	background-color: #C71585;
-	animation: second 2s ease-in-out 1 both;
+	animation: second 2s ease-in-out 1 forwards;
 	z-index: -1;
 }
 
@@ -162,7 +162,8 @@ p {
 	background-image: url(../img/Carlo_Ople.png);
 	background-size: cover;
 	background-position: center;
-	padding-bottom: 100%;  
+	padding-bottom: 100%; 
+	transform: rotate(-10deg); 
 }
 
 .person2 {
@@ -193,28 +194,16 @@ p {
 
 .shoes1 {
 	position: absolute;
-	margin-top: 5%;
+	margin-top: 8%;
 	z-index: -1;
 	transform: rotate(-30deg);
-	/*если записать все свойства animation записать в одну строку 
-	animation: shoes-one 2s ease-in-out infinite alternate;
-	то почему-то в Chrome анимация не заработала (почему?). По этой причине было оставлено так, так работает и в Safari и в Chrome  */
-	animation-name: shoes-one; 
-	animation-duration: 2s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	
+	animation: shoes-one 2s ease-in-out infinite alternate; 
 }
 
 .shoes2 {
 	position: absolute;
-	margin-top: 5%;
+	margin-top: 8%;
 	z-index: -2;
 	transform: rotate(30deg);
-	animation-name: shoes-two;
-	animation-duration: 2s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+	animation: shoes-two 2s ease-in-out infinite alternate; 
 }
