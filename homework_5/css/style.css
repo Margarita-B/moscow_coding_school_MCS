@@ -60,16 +60,16 @@ a {
 .NameandPhoto {
 	box-sizing: border-box;
 	font-size: 0px;
-	/* попробуй убрать эти margin и padding. Вместо этого задай размер этому контейнеру как сумму размеров колонок и сделать margin: auto; потом попробуй сделать ширины в процентах */
-	padding-top: 190px; /* вместо padding margin-top: 190px; */
-	margin-left: 200px;
+	height: 500px;
+	width: 1000px;
+	margin: auto;
+	padding-top: 10%;
 }
 
 .Name {	
   	display: inline-block;
   	box-sizing: border-box;
   	vertical-align: top;
-  	/*чувствую себя реальным лохом, но я не знаю как добиться нужного мне эффект - я думаю, я написал ответ*/
   	width: 500px; 
 	height: 500px;
 	text-align: center;
@@ -84,15 +84,17 @@ a {
 }
 
 .ContentContainer {
-	/* попробуй убрать эти margin и padding. Вместо этого задай размер этому контейнеру как сумму размеров колонок и сделать margin: auto; потом попробуй сделать ширины в процентах */
-	margin: 80px 110px;
+	box-sizing: border-box;
+	width: 1220px;
+	margin: auto;
+	padding-top: 13%;
+
 }
 
 .Text {
 	display: inline-block; 
 	vertical-align: top;
 	width: 400px;
-	height: 520px;
 	border: 1px solid lightgrey;
 	border-radius: 5px;
 	box-shadow: 0px 0px 5px grey;
