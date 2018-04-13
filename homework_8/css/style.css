@@ -1,0 +1,212 @@
+
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Carrois+Gothic|Love+Ya+Like+A+Sister');
+
+h1 {
+	font-size: 3em;
+	font-family:  'Love Ya Like A Sister', cursive;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 1em;
+	font-family: 'Carrois Gothic', sans-serif;
+}
+
+h3 {
+	font-size: 2em;
+	font-family: 'Love Ya Like A Sister', cursive;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+p, li {
+	font-size: 1em;
+	font-family: 'Carrois Gothic', sans-serif;
+}
+
+.header-container, .footer-container {
+	box-sizing: border-box;
+	padding: 20px;
+	background-image: url(../img/t.png);
+	background-color: #f6f6f6;
+	background-size: cover;
+	background-repeat: repeat;	
+}
+
+.title-1 {
+	box-sizing: border-box;
+	margin: 7% 5% 0%;
+	text-align: center;
+}
+
+.title-2 {
+	box-sizing: border-box;
+	margin: 0% 5%;
+	text-align: center;
+}
+
+.main-title, .about-container, .photo-container, .recipe-container, .bakerys-container {
+	box-sizing: border-box;
+	width: 95vw;
+	margin: auto;
+	background-color: #f6f6f6;
+	background-size: cover;
+	background-repeat: repeat;
+}
+
+.main-title {
+	height: 90px;
+	background-image: url(../img/t.png);
+}
+
+.about-container {
+	background-image: url(../img/t.png);
+}
+
+.about-text {
+	width: 80vw;
+	margin: auto;
+	padding: 5%;
+}
+
+.photo, .recipe-blocks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+.photo1, .photo2, .photo3, .photo4 {
+	width: 350px;
+	height: 450px;
+}
+
+.block-one, .block-two, .block-three, .block-four{
+	width: 70vw;
+	box-sizing: border-box;
+	margin: 5% 2%;
+}
+
+.text-and-icon {
+	min-height: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;	
+	box-sizing: border-box;
+	margin-top: 2%;
+}
+
+.course, .type, .prep-time, .cook-time, .servings, .calories, .ingredients {
+	display: flex;
+	align-items: center;
+}
+
+.course-icon, .type-icon, .prep-time-icon, .cook-time-icon, .servings-icon, .calories-icon {
+	width: 20px;
+	height: 20px;
+}
+
+.arrow, .arrow2, .arrow3 {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	transform: rotate(65deg);
+	box-sizing: border-box;
+	left: 5%;
+}
+
+.subtitle {
+	margin: 5%;
+	text-align: center;
+}
+
+.text-for-icon {
+	padding: 5px;
+}
+
+.bakerys-images {
+	display: flex;
+	justify-content: center;
+}
+
+.map {
+	width: 350px;
+	height: 298px;
+}
+
+
+.address-block {
+	position: relative;
+	box-sizing: border-box;
+	margin-top: 5%; 
+	margin-left: 12%;
+	margin-bottom: 5%;
+}
+
+.list-address {
+	display: flex;
+	flex-wrap: nowrap;	
+}
+
+.name-list, .address-list {
+	box-sizing: border-box;
+	margin: 10px 10px 10px 5px;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+
+	.photo1, .photo2, .photo3, .photo4 {
+	width: 550px;
+	height: 715px;
+}
+
+	.map {
+	width: 550px;
+	height: 468px;
+}
+
+	.block-one, .block-two, .block-three, .block-four {width: 35%;}
+	.arrow2 {left: 40%;}
+	
+
+@media screen and (min-width: 960px) {
+	
+	.photo1, .photo2, .photo3, .photo4 {
+	width: 450px;
+	height: 585px;
+}
+
+	.block-one, .block-two, .block-three, .block-four {width: 32%;}
+	.address-block {margin-left: 32%;}
+	.arrow3 {left: 40%;}
+	.main-title {background-position: 0px -50px;}
+	
+}
+
+@media screen and (min-width: 1264px) {
+
+	.photo1, .photo2, .photo3, .photo4 {
+	width: 600px;
+	height: 780px;
+}
+
+	.block-one, .block-two, .block-three, .block-four {width: 20%;}
+	.arrow2 {left: 45%;}
+	.address-block {margin-left: 37%;}
+
+}
+
+@media screen and (min-width: 1904px) {
+	
+	.photo1, .photo2, .photo3, .photo4 {
+	width: 650px;
+	height: 845px;
+}
+	
+}
+
