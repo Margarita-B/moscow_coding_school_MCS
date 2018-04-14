@@ -1,6 +1,35 @@
 
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css?family=Carrois+Gothic|Love+Ya+Like+A+Sister');
+@keyframes bubble-one {
+	from {transform: scale(1,1);}
+	to {transform: scale(4,4);}
+}
+
+@keyframes bubble-two {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+@keyframes bubble-three {
+	from {transform: scale(1,1);}
+	to {transform: scale(4,4);}	
+}
+
+@keyframes bubble-four {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}	
+}
+
+@keyframes bubble-five {
+	from {transform: scale(1,1);}
+	to {transform: scale(4,4);}
+}
+
+@keyframes bubble-six {
+	from {transform: scale(1,1);}
+	to {transform: scale(4,4);}
+}
 
 h1 {
 	font-size: 3em;
@@ -12,6 +41,7 @@ h1 {
 h2{
 	font-size: 1em;
 	font-family: 'Carrois Gothic', sans-serif;
+	font-weight: bold;
 }
 
 h3 {
@@ -114,11 +144,22 @@ p, li {
 	height: 100px;
 	transform: rotate(65deg);
 	box-sizing: border-box;
+}
+
+.arrow {left: 40%;}
+
+.arrow2 {left: 5%;}
+
+.arrow3 {
+	width: 80px;
+	height: 80px;
 	left: 5%;
 }
 
 .subtitle {
+	box-sizing: border-box;
 	margin: 5%;
+	padding-top: 1%;
 	text-align: center;
 }
 
@@ -140,7 +181,7 @@ p, li {
 .address-block {
 	position: relative;
 	box-sizing: border-box;
-	margin-top: 5%; 
+	margin-top: 1%; 
 	margin-left: 12%;
 	margin-bottom: 5%;
 }
@@ -155,7 +196,63 @@ p, li {
 	margin: 10px 10px 10px 5px;
 }
 
+.animation-image1 {
+	position: relative;
+}
 
+.bubble1 {
+	position: absolute;
+	width: 10px;
+	width: 10px;
+	left: 27%;
+	bottom: 76%;
+	animation: bubble-one 2s linear infinite alternate;
+}
+
+.bubble2 {
+	position: absolute;
+	width: 30px;
+	width: 30px;
+	left: 18%;
+	bottom: 40%;
+	animation: bubble-two 2s linear infinite alternate;
+}
+
+.bubble3 {
+	position: absolute;
+	width: 10px;
+	width: 10px;
+	left: 48%;
+	bottom: 46%;
+	animation: bubble-three 2s 2s linear infinite alternate;
+}
+
+.bubble4 {
+	position: absolute;
+	width: 20px;
+	width: 20px;
+	left: 74%;
+	bottom: 45%;
+	animation: bubble-four 2s 1s linear infinite;
+}
+
+.bubble5 {
+	position: absolute;
+	width: 20px;
+	width: 20px;
+	left: 19%;
+	bottom: 50%;
+	animation: bubble-five 2s 1.2s linear infinite alternate;
+}
+
+.bubble6 {
+	position: absolute;
+	width: 20px;
+	width: 20px;
+	left: 89%;
+	bottom: 55%;
+	animation: bubble-six 2s 0.2s linear infinite alternate;
+}
 
 
 @media screen and (min-width: 600px) {
@@ -171,7 +268,11 @@ p, li {
 }
 
 	.block-one, .block-two, .block-three, .block-four {width: 35%;}
-	.arrow2 {left: 40%;}
+	.arrow, .arrow2 {left: 40%;}
+	.bubble2 {
+		left: 28%;
+		bottom: 50%;
+	}
 	
 
 @media screen and (min-width: 960px) {
@@ -184,6 +285,7 @@ p, li {
 	.block-one, .block-two, .block-three, .block-four {width: 32%;}
 	.address-block {margin-left: 32%;}
 	.arrow3 {left: 40%;}
+	.arrow {left: 40%;}
 	.main-title {background-position: 0px -50px;}
 	
 }
@@ -196,7 +298,7 @@ p, li {
 }
 
 	.block-one, .block-two, .block-three, .block-four {width: 20%;}
-	.arrow2 {left: 45%;}
+	.arrow1, .arrow2 {left: 45%;}
 	.address-block {margin-left: 37%;}
 
 }
