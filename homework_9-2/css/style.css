@@ -1,0 +1,33 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+body {
+	background: black;
+	color: white;
+}
+
+h1 {
+	line-height: 2em;
+	font-size: 3em;
+	font-family: 'Allerta Stencil', sans-serif;
+}
+
+.title {
+	box-sizing: border-box;
+	margin: 2%;
+	position: relative;
+	text-align: center;
+}
+
+.main-image {
+	width: 300px;
+	height: 225px;
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+	.main-image {
+	width: 500px;
+	height: 375px;
+}
+}

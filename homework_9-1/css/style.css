@@ -1,0 +1,97 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Cutive+Mono');
+
+body {
+	background: black;
+}
+
+form {
+	width: 80%;
+	position: relative;
+	margin: auto;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 2%;
+}
+
+h1,h2,h3 {
+	color: white;
+}
+
+h1 {
+	line-height: 2em;
+	font-size: 3em;
+	font-family: 'Allerta Stencil', sans-serif;
+}
+
+h2 {
+	font-size: 2em;
+	font-family: 'Allerta Stencil', sans-serif;
+}
+
+label, span, p, h3 {
+	font-family: 'Cutive Mono', monospace;
+	font-size: 20px;
+}
+
+label, span, p, h3 {
+	line-height: 1.2em;
+}
+
+input, select {
+	border: 1px solid black;
+	background-color: white;
+}
+
+.title, .subtitle {
+	box-sizing: border-box;
+	margin: 2%;
+	position: relative;
+	text-align: center;
+}
+
+.main-image{
+	width: 300px;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+input[type="submit"] {
+	background-color: black;
+	color: white;
+	box-shadow: 0 0 10px grey;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: white;
+	color: black;
+}
+
+.footer-container {
+
+	box-sizing: border-box;
+	margin-top: 2%;
+}
+
+@media screen and (min-width: 600px) {
+	h1 {font-size: 3.5em;}
+	.main-image{
+	width: 400px;
+	height: 267px;
+}
+}
+
+@media screen and (min-width: 960px) {
+	h1 {font-size: 4em;}
+	.main-image{
+	width: 540px;
+	height: 360px;
+}
+}
+
+
+
+
+
