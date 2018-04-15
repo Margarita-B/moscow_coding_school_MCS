@@ -78,17 +78,17 @@ input[type="submit"]:hover {
 @media screen and (min-width: 600px) {
 	h1 {font-size: 3.5em;}
 	.main-image{
-	width: 400px;
-	height: 267px;
-}
+		width: 400px;
+		height: 267px;
+	}
 }
 
 @media screen and (min-width: 960px) {
 	h1 {font-size: 4em;}
 	.main-image{
-	width: 540px;
-	height: 360px;
-}
+		width: 540px;
+		height: 360px;
+	}
 }
 
 
